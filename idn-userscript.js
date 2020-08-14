@@ -15,6 +15,8 @@ function isIDN(hostname) {
 
 var hostname = window.location.hostname;
 if (isIDN(hostname)) {
-  alert(`Warning: the actual domain you visited is "${hostname}". This is an internationalized domain name (IDN). 
-If this appears to be a site you were intending to visit, you should not enter any information here, leave the page and type the site manually.`);
+  var msg = `Warning: the actual domain you visited is "${hostname}". This is an internationalized domain name (IDN). 
+If the address bar appears to show a site you were intending to visit, you should not enter any information here, leave the page and type the site manually.`;
+  alert(msg);
+  console.warn(msg);
 }
