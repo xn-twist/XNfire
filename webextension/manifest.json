@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "XNfire",
+  "description": "Firefox extension to warn browser users when the site they visit is an IDN domain",
+  "homepage_url": "https://github.com/xn-twist/XNfire",
+  "version": "1.0.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["idndetect.js"]
+    }
+   ]
+}
