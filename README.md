@@ -1,3 +1,8 @@
+### Deprecation notice: 
+This extension is deprecated, and will continue to be available for download but will not be updated or maintained.
+
+We recommend the [PunyCode Domain Detection](https://addons.mozilla.org/firefox/addon/punycode-domain-detection/) extension for Firefox.
+
 # XNfire
 Firefox extension to warn browser users when the site they visit is an IDN domain.
 
